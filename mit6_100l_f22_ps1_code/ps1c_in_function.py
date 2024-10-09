@@ -14,7 +14,7 @@ def part_c(initial_deposit):
 	if initial_deposit >= down_payment - gap:
 	    r = 0.0
 	else:
-	    while upper - lower > 1e-6:
+	    while upper - lower > 1e-8:
 	        mid = (lower + upper) / 2
 	        amount_saved = initial_deposit
 	        for month in range(months):
